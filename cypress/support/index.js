@@ -15,6 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import '../../node_modules/cypress-xpath'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+require('cypress-xpath')
+ 
