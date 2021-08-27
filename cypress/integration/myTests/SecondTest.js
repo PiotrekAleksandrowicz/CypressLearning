@@ -6,13 +6,16 @@ describe('Register Test', () => {
     cy.get("[class='btn--medium sign-up-btn btn register']").click()
     cy.wait(2000)     
   }) 
+
   it('Check register form url' , () => {
     cy.url().should('include', '/register')
   })
+
   it('Checking name of form', () => {
     cy.get('h1').should('visible')
     cy.get('h1').should('include', 'Create account')
   })
+
   it('Fill register form', () => {
     cy.xpath('/html/body/main/div/div/div/div/div/div[2]/div/form/div[1]/div/input').click().type('Piotr')
     cy.xpath('/html/body/main/div/div/div/div/div/div[2]/div/form/div[2]/div/input').click().type('Testerowicz')
@@ -20,7 +23,11 @@ describe('Register Test', () => {
     cy.xpath('/html/body/main/div/div/div/div/div/div[2]/div/form/div[4]/div/input').click().type('piotraleksandrowicz@pushpushgo.com')
     cy.get('#ppg-app>div>div>div>div>div>div.auth-panel-column--right>div>form>div:nth-child(5)>div>div').click().type('DCRvx1000eMK!')
     cy.get('#ppg-app>div>div>div>div>div>div.auth-panel-column--right>div>form>div:nth-child(6)>div>div').click().type('DCRvx1000eMK!')   
-  })   
+  }) 
+  
+  it('Perform CREATE ACCOUNT AND LOGIN button', () => {
+    cy.get("button[type='submit']").should('visible')
+  })
 })
 
   
