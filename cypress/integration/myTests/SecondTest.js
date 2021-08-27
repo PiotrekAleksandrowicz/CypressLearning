@@ -1,19 +1,22 @@
 describe('Register Test', () => {
-  it('Get into Sign Up', () => {
+
+  it('Get into https://pushpushgo.com/', () => {
     cy.visit('https://pushpushgo.com/')
-    cy.wait(5000)
-    cy.get("[class='icon-menu main-menu-toggle']").click()
-    cy.get("[class='btn--medium sign-up-btn btn register']").click()
-    cy.wait(2000)     
+    cy.wait(5000) 
   }) 
+
+  it('get into span', () => {
+    cy.get("[class='icon-menu main-menu-toggle']").click()
+    cy.get("[class='btn--medium sign-up-btn btn register']").click()  
+  })
 
   it('Check register form url' , () => {
     cy.url().should('include', '/register')
   })
 
-  it('Checking name of form', () => {
-    cy.get('h1').should('visible')
-    cy.get('h1').should('include', 'Create account')
+  it('Checking visibility of name form', () => {
+    cy.get('h1',{ timeout: 10000 }).should('be.visible')
+    
   })
 
   it('Fill register form', () => {
@@ -26,7 +29,7 @@ describe('Register Test', () => {
   }) 
   
   it('Perform CREATE ACCOUNT AND LOGIN button', () => {
-    cy.get("button[type='submit']").should('visible')
+    cy.get("button[type='submit']").should('be.visible')
   })
 })
 
