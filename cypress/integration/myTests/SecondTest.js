@@ -5,9 +5,13 @@ describe('Register Test', () => {
     cy.wait(5000) 
   }) 
 
-  it('get into span', () => {
+  it('Get into span', () => {
     cy.get("[class='icon-menu main-menu-toggle']").click()
     cy.get("[class='btn--medium sign-up-btn btn register']").click()  
+  })
+
+  it('Pause dabug', () => {
+    cy.pause()
   })
 
   it('Check register form url' , () => {
