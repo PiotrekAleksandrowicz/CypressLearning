@@ -5,6 +5,11 @@ describe('Register test, fill inputs usnig array of elements', () => {
         cy.log('Successfuly load https://app.pushpushgo.com/register')
     })
 
+    it('Reloading of website', () => {
+        cy.reload()
+        cy.log('Website reloaded succesfully')
+    })
+
     it('Use array of inputs to fill input fields', () => {
         cy.get('.input-field').eq(0).click().type('Piotr')
         cy.get('.input-field').eq(1).click().type('Aleksandrowicz')
