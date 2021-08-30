@@ -20,6 +20,7 @@ describe('Register Test', () => {
 
   it('Checking visibility of name form', () => {
     cy.get('h1',{ timeout: 10000 }).should('be.visible')
+    cy.get('h1',{ timeout: 10000 }).contains('Create account')
     
   })
 
