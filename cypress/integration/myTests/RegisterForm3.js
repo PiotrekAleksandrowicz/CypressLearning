@@ -15,7 +15,7 @@ describe('Register test, fill inputs usnig array of elements', () => {
 
     it('Click an eye button to show passwords', () => {
         cy.get('.eye-button hide-eye').eq(0).click()
-        cy.get('.eye-button hide-eye').eq(01).click()
+        cy.get('.eye-button hide-eye').eq(1).click()
 
     })
     
