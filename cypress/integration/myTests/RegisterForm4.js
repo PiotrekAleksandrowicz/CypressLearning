@@ -12,4 +12,7 @@ describe('Fullfill register form and click on the chackbox', () => {
     it('Click login button', () => {
         cy.get("[type='submit']").click()
     })
+    it('Chek you are logged', () => {
+        cy.get("[class='primary size24 text-normal']").contains('PROJEKT API NORBERT')
+    })
 })
