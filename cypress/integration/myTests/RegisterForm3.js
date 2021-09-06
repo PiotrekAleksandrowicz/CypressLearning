@@ -1,6 +1,6 @@
 describe('Register test, fill inputs usnig array of elements', () => {
 
-    it('hd resolution', () => {
+    it('Mac 11 inch resolution', () => {
         cy.viewport("macbook-13")
     })
 

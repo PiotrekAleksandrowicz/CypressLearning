@@ -1,6 +1,6 @@
 describe('Checking all inputs are displayed', () => {
 
-    it('hd resolution', () => {
+    it('Mac 11 inch resolution', () => {
         cy.viewport("macbook-13")
     })
 
