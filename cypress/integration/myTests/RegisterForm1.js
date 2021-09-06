@@ -1,5 +1,9 @@
 describe('Register Test', () => {
 
+  it('hd resolution', () => {
+    cy.viewport("macbook-13")
+  })
+
   it('Get into https://pushpushgo.com/', () => {
     cy.visit('https://pushpushgo.com/')
     cy.clearCookies({log : true})

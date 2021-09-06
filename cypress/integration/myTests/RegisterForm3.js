@@ -1,5 +1,9 @@
 describe('Register test, fill inputs usnig array of elements', () => {
 
+    it('hd resolution', () => {
+        cy.viewport("macbook-13")
+    })
+
     it('Get into registration form', () => {
         cy.visit('https://app.pushpushgo.com/register')
         cy.log('Successfuly load https://app.pushpushgo.com/register')

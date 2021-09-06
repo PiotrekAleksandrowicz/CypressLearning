@@ -1,5 +1,9 @@
 describe('Checking all inputs are displayed', () => {
 
+    it('hd resolution', () => {
+        cy.viewport("macbook-13")
+    })
+
     it('get into registration form', () =>{
         cy.visit('https://app.pushpushgo.com/register')
         cy.log('Successfuly load https://app.pushpushgo.com/register')
