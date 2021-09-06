@@ -18,6 +18,8 @@ describe('Fullfill register form and click on the chackbox', () => {
     })
     it('Chek you are logged', () => {
         cy.get("[class='primary size24 text-normal']").as('nameOfProject')
-        cy.get('nameOfProject').contains('PROJEKT API NORBERT')
+        cy.get('nameOfProject')
+            .should('be.visible')
+            .and('contain','PROJEKT API NORBERT')
     })
 })
