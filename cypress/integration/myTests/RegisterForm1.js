@@ -2,6 +2,8 @@ describe('Register Test', () => {
 
   it('Get into https://pushpushgo.com/', () => {
     cy.visit('https://pushpushgo.com/')
+    cy.clearCookies({log : true})
+    cy.clearLocalStorage('your item', {log : true})
     cy.wait(5000) 
   }) 
 

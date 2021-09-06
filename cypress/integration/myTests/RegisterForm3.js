@@ -3,6 +3,8 @@ describe('Register test, fill inputs usnig array of elements', () => {
     it('Get into registration form', () => {
         cy.visit('https://app.pushpushgo.com/register')
         cy.log('Successfuly load https://app.pushpushgo.com/register')
+        cy.clearCookies({log : true})
+        cy.clearLocalStorage('your item', {log : true})
     })
 
     it('Reloading of website', () => {
