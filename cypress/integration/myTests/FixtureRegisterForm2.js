@@ -1,6 +1,6 @@
 describe("This test use invalidUser.json data from fixtures folder", () => {
 
-    it('Gest into xxxx/login', () => {
+    it('Get into xxxx/login', () => {
         cy.visit('xxxx/login')
         cy.wait(5000) 
     })
@@ -14,5 +14,15 @@ describe("This test use invalidUser.json data from fixtures folder", () => {
             cy.get("[id='t-login-username']").type(username2)
             cy.get("[id='t-login-password']").type(password2)
         })
+    })
+
+    it('Perform login button', () => {
+        cy.get("[type='submit']").click()
+    })
+
+    it('Check text from Toast alert', () => {
+        cy.get('[class="Toastify__toast-body"]')
+        .should('be.visible')
+        .and('contain','Invalid email was given')
     })
 })
