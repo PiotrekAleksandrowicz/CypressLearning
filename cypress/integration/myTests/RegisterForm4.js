@@ -4,9 +4,9 @@ describe('Fullfill register form and click on the chackbox', () => {
         cy.viewport("macbook-13")
     })
 
-    it('Get into https://app.master1.qappg.co/login', () => {
+    it('Get into xxxx/login', () => { /*m1 */
 
-        cy.visit('https://app.master1.qappg.co/login')
+        cy.visit('xxxx/login')
         cy.clearCookies({log : true})
         cy.clearLocalStorage('your item', {log : true})
         cy.wait(5000) 

@@ -5,8 +5,8 @@ describe('Checking all inputs are displayed', () => {
     })
 
     it('get into registration form', () =>{
-        cy.visit('https://app.pushpushgo.com/register')
-        cy.log('Successfuly load https://app.pushpushgo.com/register')
+        cy.visit('xxxx/register') /*p*/
+        cy.log('Successfuly load xxxx/register')
         cy.clearCookies({log : true})
         cy.clearLocalStorage('your item', {log : true})
 

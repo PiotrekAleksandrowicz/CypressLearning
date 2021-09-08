@@ -4,8 +4,8 @@ describe('Register Test', () => {
     cy.viewport("macbook-13")
   })
 
-  it('Get into https://pushpushgo.com/', () => {
-    cy.visit('https://pushpushgo.com/')
+  it('Get into xxxx.com/', () => {/*p */
+    cy.visit('xxxx.com/')
     cy.clearCookies({log : true})
     cy.clearLocalStorage('your item', {log : true})
     cy.wait(5000) 
