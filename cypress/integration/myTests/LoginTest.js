@@ -5,14 +5,11 @@ describe('This test simulate logging into account performing "enter" button on k
     })
 
     it('clear local storage an cookies', () => {
-
         cy.clearCookies({log : true})
         cy.clearLocalStorage('item' ,{log : true})
-
     })
 
     it('Fill input fields using date from json file', () =>{
-
         cy.fixture('validUser2').then(validUser2 => {
 
             const username3 = validUser2.username
@@ -21,13 +18,12 @@ describe('This test simulate logging into account performing "enter" button on k
             cy.get("[id='t-login-username']").type(username3)
             cy.get("[id='t-login-password']").type(password3)
         })
-
     })
 
     it('Checking name of current project', () =>{
         cy.get('[class="primary size24 text-normal"]')
             .should('be.visible')
-            .and('contain','PROJEKT API NORBERT')
+            .and('contain','PluginsFirefox')
     })
 })  
 
