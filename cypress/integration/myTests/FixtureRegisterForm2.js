@@ -1,6 +1,6 @@
 describe("This test use invalidUser.json data from fixtures folder", () => {
 
-    it('Get into xxxx/login', () => {
+    it('Get into /login', () => {
         cy.visit('xxxx/login')
         cy.wait(5000) 
     })

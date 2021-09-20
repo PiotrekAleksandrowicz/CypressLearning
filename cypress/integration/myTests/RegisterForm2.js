@@ -4,7 +4,7 @@ describe('Checking all inputs are displayed', () => {
         cy.viewport("macbook-13")
     })
 
-    it('get into registration form', () =>{
+    it('Get into registration form', () =>{
         cy.visit('xxxx/register') /*p*/
         cy.log('Successfuly load xxxx/register')
         cy.clearCookies({log : true})
