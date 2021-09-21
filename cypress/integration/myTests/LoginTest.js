@@ -24,6 +24,7 @@ describe('This test simulate logging into account performing "enter" button on k
         cy.get('[class="primary size24 text-normal"]')
             .should('be.visible')
             .and('contain','PluginsFirefox')
+            .screenshot()
     })
 })  
 

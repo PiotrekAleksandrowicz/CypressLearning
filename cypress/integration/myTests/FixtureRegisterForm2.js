@@ -24,5 +24,6 @@ describe("This test use invalidUser.json data from fixtures folder", () => {
         cy.get('[class="Toastify__toast-body"]')
         .should('be.visible')
         .and('contain','Invalid email was given')
+        .screenshot()
     })
 })

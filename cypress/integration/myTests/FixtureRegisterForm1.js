@@ -1,7 +1,7 @@
 describe("This test use validUser.json data from fixtures folder", () => {
 
     it('Get into xxxx/login', () => {
-        cy.visit('xxxx/login')
+        cy.visit('https://app.master1.qappg.co//login')
         cy.wait(5000) 
     })
 
@@ -14,5 +14,9 @@ describe("This test use validUser.json data from fixtures folder", () => {
             cy.get("[id='t-login-username']").type(username1)
             cy.get("[id='t-login-password']").type(password1)
         })
+    })
+
+    it('Making screenshot of full page', () => {
+        cy.screenshot({capture : 'fullPage'})
     })
 })

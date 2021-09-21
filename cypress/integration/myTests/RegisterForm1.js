@@ -40,7 +40,7 @@ describe('Register Test', () => {
   }) 
   
   it('Perform CREATE ACCOUNT AND LOGIN button', () => {
-    cy.get("button[type='submit']").should('be.visible')
+    cy.get("button[type='submit']").should('be.visible').screenshot()
   })
 })
 
