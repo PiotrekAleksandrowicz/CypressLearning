@@ -6,7 +6,7 @@ describe('Fullfill register form and click on the chackbox', () => {
 
     it('Get into xxxx/login', () => { /*m1 */
 
-        cy.visit('xxxx/login')
+        cy.visit('https://app.master1.qappg.co/login')
         cy.clearCookies({log : true})
         cy.clearLocalStorage('your item', {log : true})
         cy.wait(5000) 
@@ -34,5 +34,6 @@ describe('Fullfill register form and click on the chackbox', () => {
         cy.get('@nameOfProject')
             .should('be.visible')
             .and('contain','PROJEKT API NORBERT')
+            .screenshot()
     })
 })

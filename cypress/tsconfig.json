@@ -6,7 +6,9 @@
       "cypress"
     ]
   },
-  "include": [
-    "**/*.*"
-  ]
-}
+    "include": [
+      "integration/*.ts",
+      "support/*.ts"
+    ]
+  
+}                                  
