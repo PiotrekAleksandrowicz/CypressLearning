@@ -6,9 +6,9 @@
       "cypress"
     ]
   },
-    "include": [
-      "integration/*.ts",
-      "support/*.ts"
-    ]
+  "include": [
+    "integration/*.ts",
+    "support/*.ts"
+  ]
   
 }                                  
