@@ -6,8 +6,10 @@ describe('Test of content of website', () => {
     })
 
     it('Check content of website', () =>{
-        cy.document()
-            .should('have.property','src')
-            .and('eq', 'https://s-eu-1.pushpushgo.com/js/605d936beb6b8169f2bf6188.js')
+        cy.document().its('contentType')
+            .should('eq','https://s-eu-1.pushpushgo.com/js/605d936beb6b8169f2bf6188.js')
+            /*.and('eq', 'https://s-eu-1.pushpushgo.com/js/605d936beb6b8169f2bf6188.js')*/
     })
 })
+
+   
