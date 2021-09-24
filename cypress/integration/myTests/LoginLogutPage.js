@@ -12,6 +12,7 @@ class LoadPage extends ClearCookiesLocalStorage{
         cy.visit(page)
     }
 }
+export default LoadPage
 
 class LoginAccount {
     static login (userMail,userPassword){
@@ -21,6 +22,7 @@ class LoginAccount {
         cy.get('button[type="submit"]').click()
     }
 }
+export default LoginAccount
 
 class LogoutAccount {
     static logout(){
@@ -28,21 +30,4 @@ class LogoutAccount {
         cy.get('[class="icon-logout-badge"]').click()
     }
 }
-
-describe('logiin and logout account',() =>{
-    it('Load Page', () =>{
-        LoadPage.load('https://app.master1.qappg.co/login')
-    })
-    it('Clear Cookies & Local Storage', () =>{
-        LoadPage.clearLocalStorag()
-        LoadPage.clearCookie()
-    })
-    it('Login account', () =>{
-        LoginAccount.login('bezdgore@gmail.com','DCRvx1000eMK!!')
-    })
-    it('Logout account', () =>{
-        LogoutAccount.logout()
-    })
- })
- 
- 
+export default LogoutAccount
