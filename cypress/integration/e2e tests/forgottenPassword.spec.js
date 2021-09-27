@@ -21,6 +21,6 @@ describe('Forgotten pasword test', () => {
     })
 
     it('Result page should have typed email', () => {
-        cy.get('.offset3 span6 > div > div').contains('Your password will be sent to the following email: piotr271993@wp.pl')
+        cy.contains('Your password will be sent to the following email: piotr271993@wp.pl')
     })
 })
