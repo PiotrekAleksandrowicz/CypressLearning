@@ -17,7 +17,7 @@ describe('Forgotten pasword test', () => {
     })
 
     it('Click Sign password button', () => {
-        cy.get('button[type="submit"]').click
+        cy.get('input[type="submit"]').click()
     })
 
     it('Result page should have typed email', () => {
