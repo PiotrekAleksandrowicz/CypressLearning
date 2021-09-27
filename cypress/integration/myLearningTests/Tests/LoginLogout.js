@@ -1,8 +1,6 @@
 import LoadPage from '../Pages/LoadPage.js'
 import LoginAccountPage from '../Pages/LoginAccountPage.js'
 import LogoutAccountPage from '../Pages/LogoutAccountPage.js'
-import ClearCookiesLocalStoragePage from '../Pages/ClearCookiesLocalStoragePage.js'
-
 
 describe('logiin and logout account',() =>{
 
@@ -10,7 +8,7 @@ describe('logiin and logout account',() =>{
         LoadPage.load('https://app.master1.qappg.co/login')
     })
 
-    it('Clear Cookies & Local Storage', () =>{
+    it.skip('Clear Cookies & Local Storage', () =>{
         LoadPage.clearLocalStorag()
         LoadPage.clearCookie()
     })
@@ -20,8 +18,7 @@ describe('logiin and logout account',() =>{
     })
 
     it('Logout account', () =>{
-        LogoutAccountPage.logout()
-        
+        LogoutAccountPage.logout()   
     })
  })
 
